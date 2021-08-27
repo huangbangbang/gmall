@@ -113,7 +113,7 @@ public class SpuServiceImpl implements SpuService {
             productSaleAttr.setSpuSaleAttrValueList(pmsProductSaleAttrValues);
         }*/
 
-       List<PmsProductSaleAttr>pmsProductSaleAttrs =  pmsProductSaleAttrMapper.selectSpuSaleAttrListCheckBySku(productId,skuId);
+       List<PmsProductSaleAttr> pmsProductSaleAttrs =  pmsProductSaleAttrMapper.selectSpuSaleAttrListCheckBySku(productId,skuId);
 
         return pmsProductSaleAttrs;
     }

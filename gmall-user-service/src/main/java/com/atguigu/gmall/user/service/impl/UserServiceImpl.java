@@ -22,7 +22,6 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
     @Autowired
     private UmsMemberReceiveAddressMapper umsMemberReceiveAddressMapper;
-
     @Autowired
     RedisUtil redisUtil;
 

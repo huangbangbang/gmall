@@ -3,7 +3,7 @@ package com.atguigu.gmall.search;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.atguigu.gmall.bean.PmsSearchSkuInfo;
 import com.atguigu.gmall.bean.PmsSkuInfo;
-import com.atguigu.gmall.cart.service.SkuService;
+import com.atguigu.gmall.service.SkuService;
 import io.searchbox.client.JestClient;
 import io.searchbox.core.Index;
 import io.searchbox.core.Search;

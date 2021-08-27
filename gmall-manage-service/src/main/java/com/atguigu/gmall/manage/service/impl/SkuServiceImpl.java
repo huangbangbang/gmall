@@ -143,6 +143,8 @@ public class SkuServiceImpl implements SkuService {
                 if (pmsSkuInfo!=null){
                     jedis.set("sku:"+skuId+":info",JSON.toJSONString(pmsSkuInfo));
                 }else {
+                    // 数据库中不存在该sku
+                    // 为了防止缓存穿透将，null或者空字符串值设置给redis
                     jedis.setex("sku:"+skuId+":info",60*30,JSON.toJSONString(""));
                 }
 
