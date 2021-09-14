@@ -2,6 +2,7 @@ package com.atguigu.gmall.bean;
 
 import javax.persistence.Id;
 import javax.persistence.Transient;
+import java.beans.Transient;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
